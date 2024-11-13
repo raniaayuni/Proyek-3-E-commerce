@@ -1,0 +1,156 @@
+.shop
+{
+    background: #f9f9f9;
+    padding-top: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    font-family: sans-serif;
+}
+.shop .sidebar
+{
+    width: 250px;
+    margin-right: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+.shop .sidebar h2
+{
+    text-align: center;
+    color: #dc143c;
+    font-size: 24px;
+}
+.shop .sidebar ul
+{
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+.shop .sidebar ul li
+{
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.shop .sidebar ul li:hover
+{
+    color: #343a40;
+}
+.shop .product_container
+{
+    flex: 1;
+}
+.shop .product_container h2
+{
+    font-size: 32px;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.shop .product_container .product_grid
+{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+.shop .product_container .product_grid .product_card
+{
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.shop .product_container .product_grid .product_card:hover
+{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.shop .product_container .product_grid .product_card .product_img img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.shop .product_container .product_grid .product_card:hover .product_img img
+{
+    transform: scale(1.1);
+}
+.shop .product_container .product_grid .product_card .product_info
+{
+    margin-top: 15px;
+}
+.shop .product_container .product_grid .product_card .product_info .title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+.shop .product_container .product_grid .product_card .product_info .price
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+.shop .product_container .product_grid .product_card .product_info .add_to_cart
+{
+    width: 100%;
+    color: #fff;
+    background: #007bff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+.shop .product_container .product_grid .product_card .product_info .add_to_cart:hover
+{
+    background: #0056b3;
+}
+.shop .product_container .product_grid .product_card .product_icon .icon_eye
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #6c757d;
+    cursor: pointer;
+}
+.pagination
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.pagination .checkBtn
+{
+    padding: 10px 20px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.pagination .checkBtn.active
+{
+    background: #6c757d;
+}
+.pagination .checkBtn:hover:not(.active)
+{
+    background: #0056b3;
+}
+.pagination .checkBtn:disabled
+{
+    cursor: not-allowed;
+    opacity: 0.5;
+}

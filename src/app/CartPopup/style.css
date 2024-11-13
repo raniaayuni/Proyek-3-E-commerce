@@ -1,0 +1,134 @@
+.cart_sidebar
+{
+    width: 350px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #f9f9f9;
+    border-left: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.cart_sidebar .cart_header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart_sidebar .cart_header h2
+{
+    color: #2c353e;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.cart_sidebar .cart_header .close_btn
+{
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: #dc143c;
+    background: none;
+    cursor: pointer;
+}
+.cart_sidebar .empty_cart
+{
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30%;
+    margin-left: 20%;
+    letter-spacing: 1px;
+    font-size: 26px;
+    color: #dc143c;
+    text-transform: capitalize;
+}
+.cart_sidebar .cart_item
+{
+    margin-bottom: 20px;
+}
+.cart_sidebar .cart_item .item
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.cart_sidebar .cart_item .item .img_box img
+{
+    width: 50px;
+}
+.cart_sidebar .cart_item .item .info
+{
+    flex: 1;
+}
+.cart_sidebar .cart_item .item .info h3
+{
+    font-size: 14px;
+    color: #2c353e;
+}
+.cart_sidebar .cart_item .item .info p
+{
+    margin-top: 10px;
+    color: #2c353e;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cart_sidebar .cart_item .item .qty_control
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.cart_sidebar .cart_item .item .qty_control button
+{
+    font-size: 18px;
+    color: #007bff;
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.cart_sidebar .cart_item .item .item_total
+{
+    font-size: 16px;
+    color:#2c353e;
+    font-weight: bolder;
+}
+.cart_sidebar .cart_item .item .rmv_btn
+{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: none;
+    font-size: 18px;
+    color: #dc143c;
+    cursor: pointer;
+}
+.cart_sidebar .cart_summery
+{
+    position: absolute;
+    bottom: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+}
+.cart_sidebar .cart_summery h3
+{
+    color: #2c353e;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.cart_sidebar .cart_summery button
+{
+    background: #f76c6c;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}

@@ -1,0 +1,94 @@
+.form_container
+{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    background: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.form_container h2
+{
+    color: #6c747d;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form_container .inputs
+{
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.form_container .inputs label
+{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.form_container .inputs input
+{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+.form_container .btn
+{
+    width: 100%;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.form_container .login_btn
+{
+    background: #ff3f5e;
+    color: #fff;
+}
+.form_container .Toggle_from_text
+{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.form_container .Toggle_from_text .toggle_btn
+{
+    color: #ff3f5e;
+    cursor: pointer;
+} 
+.modal
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.modal .modal_contant
+{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+.modal .modal_contant .close_btn
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
